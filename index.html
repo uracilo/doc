@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dra. Laura Sánchez</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5faff;
+      color: #333;
+    }
+    header {
+      background-color: #e0f0ff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    nav {
+      text-align: center;
+      background-color: #d0eaff;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      border-bottom: 2px solid #cce5ff;
+      padding-bottom: 5px;
+      color: #0077cc;
+    }
+    .servicios ul {
+      list-style: none;
+      padding: 0;
+    }
+    .servicios li {
+      margin-bottom: 10px;
+      padding-left: 15px;
+      position: relative;
+    }
+    .servicios li::before {
+      content: '✔';
+      color: #0077cc;
+      position: absolute;
+      left: 0;
+    }
+    .testimonios blockquote {
+      background: #eaf6ff;
+      padding: 15px;
+      border-left: 5px solid #0077cc;
+      margin: 20px 0;
+      font-style: italic;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .cta a {
+      background-color: #0077cc;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="foto-doctora.jpg" alt="Foto de la Dra. Laura Sánchez">
+    <h1>Dra. Laura Sánchez</h1>
+    <p>Cuidando tu salud con compasión</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy la Dra. Laura Sánchez, médico general con más de 15 años de experiencia en el cuidado integral de la salud. Me especializo en atención pediátrica, medicina preventiva y el acompañamiento cercano a cada paciente.</p>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Medicina general</li>
+      <li>Pediatría</li>
+      <li>Prevención y control de enfermedades</li>
+    </ul>
+  </section>
+
+  <section id="testimonios" class="testimonios">
+    <h2>Testimonios</h2>
+    <blockquote>
+      "La Dra. Laura es muy atenta y profesional. Siempre se toma el tiempo para escucharme. ¡La recomiendo totalmente!" – María G.
+    </blockquote>
+    <blockquote>
+      "Mi hijo adora ir con la doctora. Tiene un trato muy humano y explica todo con paciencia." – Javier R.
+    </blockquote>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="4" placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <div class="cta">
+    <a href="#contacto">Agendar cita</a>
+  </div>
+
+</body>
+</html>
